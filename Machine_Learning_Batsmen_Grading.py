@@ -128,5 +128,13 @@ workbook4a.save(filename="Result.xlsx")
 result = pd.read_csv('C:/Users/sathya narayanan/Downloads/result.csv')
 kmeans = KMeans(n_clusters = 3, random_state = 10)
 X = result[['IPL RANK POINTS','RECENT-FORM POINTS','CONSISTENCY POINTS']]
-print(kmeans.fit_predict(X))
+kmeans.fit(X)
+clu = kmeans.fit_predict(X)
+Y = [[50,25,3]]
+print(clu)
+print(kmeans.predict(Y))
+plt.scatter(X[:,0],X[:,1])                   #To View the Data given for Training
+plt.show()
+plt.scatter(X[:,0],clu)                      #To View Grades of all Batsmen
+plt.show()
                                                              
