@@ -124,7 +124,9 @@ for i in range(2,sheet4.max_row+1):
 workbook4a.save(filename="Result.xlsx")
                                                              #Saving output file
                                                           #Data Preparation
-                                                   # DATA - PREPARATION
+                                                   # DATA - PREPARATION - ENDS
+                                                   
+                                                   # MACHINE - LEARNING - PART
 result = pd.read_csv('C:/Users/sathya narayanan/Downloads/result.csv')
 kmeans = KMeans(n_clusters = 3, random_state = 10)
 X = result[['IPL RANK POINTS','RECENT-FORM POINTS','CONSISTENCY POINTS']]
