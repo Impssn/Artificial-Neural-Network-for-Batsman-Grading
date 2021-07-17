@@ -22,7 +22,7 @@ workbook4 = xlsxwriter.Workbook('C:/Users/sathya narayanan/Documents/Data_Mining
 workbook4a = load_workbook(filename="Result.xlsx")
                                                       #Getting Input Files
 
-                                               #initializing needed variables
+                                                #initializing needed variables
 teams = []
 runs = []
 runs_at_win = []
