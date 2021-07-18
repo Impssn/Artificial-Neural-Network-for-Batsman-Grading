@@ -1,4 +1,4 @@
-# Machine_Learning_Batsmen_Grading :
+#  Artificial-Neural-Network-for-Batsman-Grading :
 Nowadays the IPL (Indian Premier League) is getting popular and the Auction 
 in which the players for their sides are bought by all of the Franchises is also 
 an important Key Factor. So in this Algorithm we will be helping those 
