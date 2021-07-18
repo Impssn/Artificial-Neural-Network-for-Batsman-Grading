@@ -3,7 +3,7 @@ Nowadays the IPL (Indian Premier League) is getting popular and the Auction
 in which the players for their sides are bought by all of the Franchises is also 
 an important Key Factor. So in this Algorithm we will be helping those 
 Franchises predict the performance of each Batsman in the upcoming Season 
-by giving them all the Batsman a Grade (‘A’ or ‘B’ or ‘C’). This is done by using 
+by giving all the Batsmen a Grade (‘A’ or ‘B’ or ‘C’). This is done by using 
 the IPL Batsman Rank list, Orange-cap list (Top 10) for the previous half 
 decade and the Total runs scored by each Individual Batsman in the Last 
 Season.
