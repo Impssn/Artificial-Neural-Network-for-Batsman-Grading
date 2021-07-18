@@ -133,8 +133,8 @@ elif (kmeans.predict(Y)) == 1:
  print("Grade 1")
 else:
  print("Grade 2")
-plt.scatter(X[:,0],X[:,1])                   #To View the Data given for Training
+plt.scatter(X.iloc[:,0],X.iloc[:,1])                   #To View the Data given for Training
 plt.show()
-plt.scatter(X[:,0],clu)                      #To View Grades of all Batsmen
+plt.scatter(X.iloc[:,0],clu)                      #To View Grades of all Batsmen
 plt.show()
                                                              
