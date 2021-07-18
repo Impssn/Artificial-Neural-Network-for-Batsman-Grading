@@ -5,6 +5,7 @@ import openpyxl
 import pandas as pd
 from sklearn.cluster import KMeans 
 from sklearn import metrics
+import matplotlib.pyplot as plt
                                           # DATA - PREPARATION
                                                      #Getting Input Files (by user entering) 
 print(" ")
@@ -111,10 +112,11 @@ for i in range(2,sheet4.max_row+1):
    sheet4.cell(row=i,column=5).value = sheet4.cell(row=i,column=4).value + sheet4.cell(row=i,column=3).value + sheet4.cell(row=i,column=2).value
 
 
-                                                      #Saving output file
-workbook4a.save(filename="Result.xlsx")
-                                                             #Saving output file
-                                                          #Data Preparation
+                                                     
+workbook4a.save(filename="Result.xlsx")                 #Saving output file
+                                                          
+                                                        
+                                                           #Data Preparation
                                                    # DATA - PREPARATION - ENDS
                                                    
                                                    # MACHINE - LEARNING - PART
@@ -123,9 +125,14 @@ kmeans = KMeans(n_clusters = 3, random_state = 10)
 X = result[['IPL RANK POINTS','RECENT-FORM POINTS','CONSISTENCY POINTS']]
 kmeans.fit(X)
 clu = kmeans.fit_predict(X)
-Y = [[50,25,3]]
 print(clu)
-print(kmeans.predict(Y))
+Y = [[50,25,3]]                              #Test-case
+if(kmeans.predict(Y)) == 0:
+ print("Grade 3")
+elif (kmeans.predict(Y)) == 1:
+ print("Grade 1")
+else:
+ print("Grade 2")
 plt.scatter(X[:,0],X[:,1])                   #To View the Data given for Training
 plt.show()
 plt.scatter(X[:,0],clu)                      #To View Grades of all Batsmen
