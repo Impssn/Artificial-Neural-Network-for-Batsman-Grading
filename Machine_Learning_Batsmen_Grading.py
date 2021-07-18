@@ -111,15 +111,6 @@ for i in range(2,sheet4.max_row+1):
    sheet4.cell(row=i,column=5).value = sheet4.cell(row=i,column=4).value + sheet4.cell(row=i,column=3).value + sheet4.cell(row=i,column=2).value
 
 
-
-                                                     #""" Regression Training Model """
-for i in range(2,sheet4.max_row+1):
-  if float(str(sheet4.cell(row=i,column=2).value)) >= float(30) or int(str(sheet4.cell(row=i,column=3).value)) >= 20 or int(str(sheet4.cell(row=i,column=4).value)) >=4:
-       sheet4.cell(row=i,column=7).value = "       1"
-  else:                                                             
-       sheet4.cell(row=i,column=7).value = "       0"
-
-                                                    # """ Regression Training Model """
                                                       #Saving output file
 workbook4a.save(filename="Result.xlsx")
                                                              #Saving output file
