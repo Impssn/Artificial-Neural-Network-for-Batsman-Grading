@@ -4,7 +4,6 @@ import xlsxwriter
 import openpyxl
 import pandas as pd
 from sklearn.cluster import KMeans 
-from sklearn import metrics
 import matplotlib.pyplot as plt
                                           # DATA - PREPARATION
                                                      #Getting Input Files (by user entering) 
