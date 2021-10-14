@@ -22,7 +22,7 @@ Team in all the Winning matches.
 
 #Output :
 ➔Players of ‘1’ Grade(Grade A) perform exceptionally well and of ‘2’ Grade (Grade B) perform in 
-2.5 or 3 matches out of 5 finally the ‘0’ Graded (Grade C) player performs only Rarely and is not much reliable.
+2.5 or 3 matches out of 5 finally the ‘3’ Graded (Grade C) player performs only Rarely and is not much reliable.
 
 #Clustering Algorithm used :
 ➔We use K-means Clustering Algorithm for this Machine Learning Model Implementation
